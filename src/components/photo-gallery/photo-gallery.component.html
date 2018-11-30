@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-4 no-padding-right">
+    <app-folders-view *ngIf="allowToFolders" [folders]="folderNames" (selectedFolder)="selectFolder($event)"></app-folders-view>
+  </div>
+  <div class="col-8 no-padding-left" [hidden]="!folderPath">
+    <app-image-view [fPath]="folderPath"></app-image-view>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body{
+    background-color: lightgray
+}
+
+.banner{
+    text-align: center;
+}
+
+.nav-bar{
+    list-style-type:  none;
+    float: left;
+    padding-right: 5em 
+}
+
+.menu-padding{
+    padding-right: 0em !important;
+    padding-left: 2em !important;
+}
+
+.menu-border{
+    height: 13px;
+    display: block;
+    width: 100%;
+}
+
+.menu-seperator{
+    width: 3em;
+}
+
+.banner-img{
+    background: url('./assets/images/banner.jpg');
+    width: 100%;
+    background-repeat: round;
+    height: 150px;
+}
+
+.banner-img:hover{
+    background: url('./assets/images/banner_hover.jpg');
+    width: 100%;
+    background-repeat: round;
+    height: 150px;
+}
+
+.lang-button{
+    position: fixed;
+    right: 12px;
+    top: 10px;
+}
+
+.dropdown-menu.dropdown-menu-right.fab-show-langs.show{
+    position: fixed !important
+}
+
+.dropdown-menu.dropdown-menu-right.fab-show-langs{
+    position: fixed !important
+}
+
+.no-padding-left{
+    padding-left: 0% !important;
+}
+
+.no-padding-right{
+    padding-right: 0% !important;
+}

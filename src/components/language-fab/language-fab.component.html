@@ -1,0 +1,13 @@
+<div class="dropdown">
+    <button type="button" class="btn btn-primary bmd-btn-fab dropdown-toggle lang-button" data-toggle="dropdown" id="ex1"
+      aria-haspopup="true">
+      <i class="material-icons">language</i>
+    </button>
+
+    <div class="dropdown-menu dropdown-menu-right fab-show-langs" aria-labelledby="ex1">
+      <span *ngFor="let language of languages">
+      <button class="dropdown-item" type="button" (click)=" switchLanguage(language.localeCode) ">{{ language.localeName }}</button>
+      </span>
+    </div>
+
+  </div>

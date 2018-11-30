@@ -1,0 +1,16 @@
+.folders-view{
+    border: 5px solid #E86B35; 
+    height: 60vh; 
+    text-transform: capitalize;
+    margin: 10px;
+    background-color: #FFF7EE;
+}
+
+.list-item{
+    transition: 0.2s background-color;
+}
+.list-item:hover{
+    cursor: pointer;
+    background-color: #E86B35;
+    color:white;
+}

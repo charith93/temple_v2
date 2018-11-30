@@ -1,0 +1,45 @@
+<div class="banner-img">
+</div>
+<img src="assets/images/border.png" class="menu-border">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link menu-padding" [class.active]="currentUrl == '/'" routerLink="">{{ 'mnu_home' |
+                translate: resource.lan }} </a>
+            <a class="nav-item nav-link menu-padding"><img class="menu-seperator" src="assets/images/menu_seperator.png" /></a>
+            <a class="nav-item nav-link menu-padding" [class.active]="currentUrl == '/historyOfTemple'" routerLink="/historyOfTemple">{{
+                'mnu_hist_of_temple' | translate: resource.lan }}</a>
+            <a class="nav-item nav-link menu-padding"><img class="menu-seperator" src="assets/images/menu_seperator.png" /></a>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle menu-padding" href="#" id="navbarDropdown" [class.active]="currentUrl && currentUrl.includes('/events')"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/events">
+                    {{ 'mnu_events' | translate: resource.lan }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLink="/events/schedule">{{ 'mnu_events_schedule' | translate: resource.lan }}</a>
+                    <a class="dropdown-item" routerLink="/events/sevas">{{ 'mnu_events_sevas' | translate: resource.lan }}</a>
+                    <a class="dropdown-item" routerLink="/events/festivals">{{ 'mnu_events_festivals' | translate: resource.lan }}</a>
+                </div>
+            </li>
+
+            <a class="nav-item nav-link menu-padding"><img class="menu-seperator" src="assets/images/menu_seperator.png" /></a>
+
+
+
+            <a class="nav-item nav-link menu-padding" [class.active]="currentUrl == '/photoGallery'" routerLink="/photoGallery">{{
+                'mnu_photo_gallery' | translate: resource.lan }}</a>
+            <a class="nav-item nav-link menu-padding"><img class="menu-seperator" src="assets/images/menu_seperator.png" /></a>
+            <a class="nav-item nav-link menu-padding" [class.active]="currentUrl == '/donations'" routerLink="/donations">{{
+                'mnu_donations' | translate: resource.lan }}</a>
+            <a class="nav-item nav-link menu-padding"><img class="menu-seperator" src="assets/images/menu_seperator.png" /></a>
+            <a class="nav-item nav-link menu-padding" [class.active]="currentUrl == '/contactus'" routerLink="/contactus">{{
+                'mnu_contact_us' | translate: resource.lan }}</a>
+        </div>
+    </div>
+</nav>
+<img src="assets/images/border.png" class="menu-border">

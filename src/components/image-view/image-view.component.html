@@ -1,0 +1,10 @@
+
+<div class="container" [hidden]="images.length == 0" gallerize="auto-detect">
+  <img *ngFor="let image of images"
+       src="{{image.thumb}}"
+       height=100
+       weight=100
+       style="padding: 10px"
+       [attr.imageSrc]="image.src"
+       [attr.thumbSrc]="image.thumb">
+</div>
