@@ -8,7 +8,7 @@ import { ResourceService } from 'src/services/resource.service';
 })
 export class HistoryOfTempleComponent implements OnInit {
 
-  constructor(private resource: ResourceService) { }
+  constructor(public resource: ResourceService) { }
 
   ngOnInit() {
   }
